@@ -3,11 +3,10 @@
 #include "main.h"
 
 /**
- * _putchar - Writes a character to the standard output
- * @c: The character to be written
- *
+ * _putchar - sends a character to the standard output
+ * @c: The character to be sent to standard output
  * Return: On success, returns the character written.
- *         On error, returns EOF.
+ *         else, returns ****.
  */
 int _putchar(char c)
 {
@@ -15,19 +14,17 @@ int _putchar(char c)
 }
 
 /**
- * _print - Prints the formatted output based on the format specifier
- * @format: The format string containing the directives
- * @args: The variable arguments list
- *
- * Return: The number of characters printed
+ * _print - Prints the formatted output according to format specifier
+ * @format: format string containing the directives
+ * @args: variable arguments list
+ * Return: number of characters to be printed
  */
 int _print(const char *format, va_list args);
 
 /**
  * _printf - Prints formatted output to the standard output
  * @format: The format string containing the directives
- *
- * Return: The number of characters printed (excluding the null byte)
+ * Return: The number of characters printed
  */
 int _printf(const char *format, ...)
 {
@@ -45,11 +42,10 @@ int _printf(const char *format, ...)
 }
 
 /**
- * _print - Helper function for recursive printing based on format specifier
- * @format: The format string containing the directives
- * @args: The variable arguments list
- *
- * Return: The number of characters printed
+ * _print - function for recursive printing based on format specifier
+ * @format: format string containing the directives
+ * @args: variable arguments list
+ * Return: number of characters printed
  */
 int _print(const char *format, va_list args)
 {
